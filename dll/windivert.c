@@ -31,7 +31,7 @@
 #include "windivert.h"
 #include "windivert_device.h"
 
-#define WINDIVERT_DRIVER_NAME           L"WinDivert"
+#define WINDIVERT_DRIVER_NAME           L"WinFireDriver"
 #define WINDIVERT_DRIVER32_SYS          L"\\" WINDIVERT_DRIVER_NAME L"32.sys"
 #define WINDIVERT_DRIVER64_SYS          L"\\" WINDIVERT_DRIVER_NAME L"64.sys"
 

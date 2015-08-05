@@ -18,6 +18,10 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E739D373-7655-45F6-89A1-2D44374831CC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
   <PropertyGroup>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <TARGETNAME>WinDivert</TARGETNAME>
@@ -29,14 +33,14 @@
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>windivert.def</ModuleDefinitionFile>
-    </Link> 
+    </Link>
   </ItemDefinitionGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PlatformToolset>v110</PlatformToolset>
@@ -50,12 +54,12 @@
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <UseDebugLibraries>False</UseDebugLibraries>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ItemGroup>
-    <ClCompile Include="windivert.c"/>
+    <ClCompile Include="windivert.c" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="windivert.def"/>
+    <None Include="windivert.def" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
