@@ -2,3 +2,6 @@ examples/netfilter/x64/
 examples/netfilter/Debug/
 examples/webfilter/x64/
 dll/x64/
+examples/netdump/x64/
+examples/passthru/x64/
+examples/netdump/Debug/
